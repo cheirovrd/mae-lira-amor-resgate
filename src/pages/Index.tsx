@@ -66,7 +66,7 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <SectionHeader title="Experiência e poder espiritual para te ajudar!" subtitle="Mãe Lira é uma especialista em amarração amorosa e em assuntos de ordem espiritual, com mais de 20 anos de experiência." />
+          <SectionHeader title="Experiência e poder espiritual para te ajudar!" subtitle="Mãe Lira é uma especialista em amarração amorosa e em assuntos de ordem espiritual, com mais de 20 anos de experiência. Seu trabalho é focado em rituais e procedimentos para solucionar crises, eliminando influências negativas e resgatando o sentimento, com segurança, discrição e resultados de longo prazo, reais e efetivos." />
           
           
         </div>
