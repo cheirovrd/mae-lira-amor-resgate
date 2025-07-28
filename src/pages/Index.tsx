@@ -140,7 +140,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <img src={maeLiraPortrait} alt="Mãe Lira - Especialista em Amarração Amorosa" className="w-full max-w-md mx-auto rounded-lg shadow-card" />
+              <img src="/lovable-uploads/72851f37-cb36-435b-a4bd-6249f4aa3ece.png" alt="Mãe Lira - Especialista em Amarração Amorosa" className="w-full max-w-md mx-auto rounded-lg shadow-card" />
             </div>
             <div>
               <p className="text-lg text-muted-foreground mb-6">
