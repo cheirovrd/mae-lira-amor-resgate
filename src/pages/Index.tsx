@@ -7,19 +7,15 @@ import { FAQ } from "@/components/FAQ";
 import { Heart, Phone, Shield, Star, Zap, Clock } from "lucide-react";
 import mysticalBg from "@/assets/mystical-background.jpg";
 import maeLiraPortrait from "@/assets/mae-lira-portrait.jpg";
-
 const Index = () => {
   const handleConsultation = () => {
     window.open("https://wa.me/5511999999999?text=Olá, gostaria de agendar uma consulta exclusiva com a Mãe Lira", "_blank");
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${mysticalBg})` }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${mysticalBg})`
+    }}>
         <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -34,12 +30,7 @@ const Index = () => {
             Mãe Lira realiza rituais com um propósito: para casos de separação, traição, términos ou esfriamento. Com força espiritual, ela atua para resgatar o sentimento e impedir que a relação se acabe de vez.
           </p>
           
-          <Button 
-            variant="mystic" 
-            size="lg" 
-            onClick={handleConsultation}
-            className="text-lg px-8 py-6 mb-4"
-          >
+          <Button variant="mystic" size="lg" onClick={handleConsultation} className="text-lg px-8 py-6 mb-4">
             <Heart className="mr-2" />
             AGENDAR UMA CONSULTA EXCLUSIVA
           </Button>
@@ -75,16 +66,9 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <SectionHeader 
-            title="Experiência e poder espiritual para te ajudar!"
-            subtitle="Mãe Lira é uma especialista em amarração amorosa e em assuntos de ordem espiritual, com mais de 20 anos de experiência."
-          />
+          <SectionHeader title="Experiência e poder espiritual para te ajudar!" subtitle="Mãe Lira é uma especialista em amarração amorosa e em assuntos de ordem espiritual, com mais de 20 anos de experiência." />
           
-          <Card className="p-8 bg-card/80 backdrop-blur-sm border border-primary/20 hover:shadow-card">
-            <p className="text-lg text-muted-foreground text-center">
-              Seu trabalho é focado em rituais e procedimentos para solucionar crises, eliminando influências negativas e resgatando o sentimento, com segurança, discrição e resultados de longo prazo, reais e efetivos.
-            </p>
-          </Card>
+          
         </div>
       </section>
 
@@ -94,40 +78,15 @@ const Index = () => {
           <SectionHeader title="Minhas Especialidades:" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <SpecialtyCard 
-              icon="❤️"
-              title="Amarração Amorosa Definitiva"
-              description="Traz a pessoa amada de volta para você, cheia de paixão e desejo."
-            />
-            <SpecialtyCard 
-              icon="🔥"
-              title="Trabalhos Espirituais Poderosos"
-              description="Energias positivas para destravar sua vida amorosa."
-            />
-            <SpecialtyCard 
-              icon="🕯️"
-              title="Oferendas e Rituais Ciganos"
-              description="Proteção, união e fortalecimento dos laços afetivos."
-            />
-            <SpecialtyCard 
-              icon="💖"
-              title="Adoçamento Espiritual"
-              description="Harmoniza seu relacionamento e reacende a chama do amor."
-            />
-            <SpecialtyCard 
-              icon="🔮"
-              title="Afastamento de Rivais"
-              description="Corta influências negativas e protege seu relacionamento."
-            />
+            <SpecialtyCard icon="❤️" title="Amarração Amorosa Definitiva" description="Traz a pessoa amada de volta para você, cheia de paixão e desejo." />
+            <SpecialtyCard icon="🔥" title="Trabalhos Espirituais Poderosos" description="Energias positivas para destravar sua vida amorosa." />
+            <SpecialtyCard icon="🕯️" title="Oferendas e Rituais Ciganos" description="Proteção, união e fortalecimento dos laços afetivos." />
+            <SpecialtyCard icon="💖" title="Adoçamento Espiritual" description="Harmoniza seu relacionamento e reacende a chama do amor." />
+            <SpecialtyCard icon="🔮" title="Afastamento de Rivais" description="Corta influências negativas e protege seu relacionamento." />
           </div>
           
           <div className="text-center mt-8">
-            <Button 
-              variant="mystic" 
-              size="lg" 
-              onClick={handleConsultation}
-              className="text-lg px-8 py-6"
-            >
+            <Button variant="mystic" size="lg" onClick={handleConsultation} className="text-lg px-8 py-6">
               <Heart className="mr-2" />
               AGENDAR UMA CONSULTA EXCLUSIVA
             </Button>
@@ -145,21 +104,9 @@ const Index = () => {
           <SectionHeader title="Os resultados são inquestionáveis:" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <TestimonialCard 
-              name="Luana Leite"
-              text="Meus caminhos estavam fechados, eu já não tinha fé. Expus toda a situação e recebi um ótimo atendimento. Hoje estou feliz com meu marido, ele voltou com amor. Sou muito grata."
-              hasVideo
-            />
-            <TestimonialCard 
-              name="Patrícia Saraiva"
-              text="Fiz a amarração pois estava cansada da minha vida. Eu já tinha perdido as esperanças, mas a Mãe Lira me ajudou. Em menos de 7 dias ele voltou pra casa, hoje somos um casal feliz novamente. Foi o melhor presente que recebi."
-              hasVideo
-            />
-            <TestimonialCard 
-              name="Ricardo Costa"
-              text="Eu não acreditava, mas nunca mais faltou amor na minha casa. A Mãe Lira me orientou com sabedoria, me ajudou a resolver todas as pendências do meu casamento. Só tenho a agradecer por esse trabalho incrível e por me devolver a alegria de viver."
-              hasVideo
-            />
+            <TestimonialCard name="Luana Leite" text="Meus caminhos estavam fechados, eu já não tinha fé. Expus toda a situação e recebi um ótimo atendimento. Hoje estou feliz com meu marido, ele voltou com amor. Sou muito grata." hasVideo />
+            <TestimonialCard name="Patrícia Saraiva" text="Fiz a amarração pois estava cansada da minha vida. Eu já tinha perdido as esperanças, mas a Mãe Lira me ajudou. Em menos de 7 dias ele voltou pra casa, hoje somos um casal feliz novamente. Foi o melhor presente que recebi." hasVideo />
+            <TestimonialCard name="Ricardo Costa" text="Eu não acreditava, mas nunca mais faltou amor na minha casa. A Mãe Lira me orientou com sabedoria, me ajudou a resolver todas as pendências do meu casamento. Só tenho a agradecer por esse trabalho incrível e por me devolver a alegria de viver." hasVideo />
           </div>
         </div>
       </section>
@@ -193,11 +140,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <img 
-                src={maeLiraPortrait} 
-                alt="Mãe Lira - Especialista em Amarração Amorosa" 
-                className="w-full max-w-md mx-auto rounded-lg shadow-card"
-              />
+              <img src={maeLiraPortrait} alt="Mãe Lira - Especialista em Amarração Amorosa" className="w-full max-w-md mx-auto rounded-lg shadow-card" />
             </div>
             <div>
               <p className="text-lg text-muted-foreground mb-6">
@@ -276,19 +219,12 @@ const Index = () => {
             Entre em contato agora mesmo!
           </p>
           
-          <Button 
-            variant="golden" 
-            size="lg" 
-            onClick={handleConsultation}
-            className="text-lg px-8 py-6"
-          >
+          <Button variant="golden" size="lg" onClick={handleConsultation} className="text-lg px-8 py-6">
             <Heart className="mr-2" />
             AGENDAR UMA CONSULTA EXCLUSIVA
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
